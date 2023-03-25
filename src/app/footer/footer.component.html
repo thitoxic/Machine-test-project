@@ -1,0 +1,27 @@
+
+<div class="main">
+    <div>
+        <strong>Overseas Travels</strong>
+        <li *ngFor="let item of overseasTravels">
+            <span>{{item}}</span>
+        </li>
+    </div>
+    <div> 
+        <strong>Indian Tours</strong>
+        <li *ngFor="let item of indianTours">
+            <span class="caps">{{item}}</span>
+        </li>
+    </div>
+    <div>
+        <strong>Exotic Islands</strong>
+        <li *ngFor="let item of islands">
+            <span class="caps">{{item}}</span>
+        </li>
+    </div>
+    <div>
+        <strong>Our Specialities</strong>
+        <li style="margin-left: 10px;" *ngFor="let item of specialities">
+            <span class="caps">{{item}}</span>
+        </li>
+    </div>
+</div>

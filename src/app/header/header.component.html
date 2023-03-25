@@ -1,0 +1,94 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-pad">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <img src="https://image.kesari.in/upload/module/websiteUpload/image_file/Kesari-text-logo.png"/>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="showToggle()"
+      >
+        <span>=</span>
+      </button>
+      <!-- <div style="margin-left: 4em;" > -->
+        <!-- <div class="mobile-menu"> -->
+          <select *ngIf="toggle" class="form-select" aria-label="Default select example">
+            <option selected>Menu</option>
+            <option>World Tours</option>
+            <option>Economic Tours</option>
+          </select>
+          <button *ngIf="toggle" style="margin:30px" class="btn btn-india" routerLink="india">Explore India</button>
+        <!-- </div> -->
+      <!-- </div>     -->
+  
+      <!-- Collapsible wrapper -->
+      <div
+        class="collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Group Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >Speciality Tours</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >Economy Tours</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >Tailormade holidays</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >More</a
+            >
+          </li>
+          <li class="nav-item">
+            <button routerLink="india" class="btn btn-india" href="#" tabindex="-1" aria-disabled="true"
+              ><span>Explore India!</span></button
+            >
+          </li>
+        </ul>
+
+        
+        <!-- Left links -->
+  
+        <!-- Search form -->
+        <form class="d-flex input-group w-auto">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Search Destinations"
+            aria-label="Search"
+          />
+          <button class="btn btn-danger" type="button">
+            Search
+          </button>
+        </form>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->

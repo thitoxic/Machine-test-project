@@ -1,0 +1,12 @@
+<div>
+    <ngb-carousel *ngIf="popularDestins">
+        <ng-template *ngFor="let item of popularDestins" ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="destination-img" src="{{item.images}}" />
+            </div>
+            <div class="carousel-caption">
+                <h3>{{item.name}}</h3>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: rgb(43, 43, 54);
+    color: white;
+    padding: 20px;
+    margin: 0px;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .main {
+        background-color: red;
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+    }
+  }
