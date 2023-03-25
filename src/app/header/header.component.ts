@@ -8,10 +8,11 @@ import { AppHttpService } from '../app-http.service';
 export class HeaderComponent {
 
   toggle = false;
+  corporateTours : any[] = []
 
 constructor(private vacationData : AppHttpService){
-  this.vacationData.cast.subscribe((data) => {
-    console.log('data', data)
+  this.vacationData.cast.subscribe((data: any) => {
+    this.corporateTours = data.CORPORATE && data.CORPORATE[0].TYPE
   })
   
 }

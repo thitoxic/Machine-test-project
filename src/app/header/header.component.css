@@ -28,3 +28,10 @@ div {
     border: none;
     margin-left: 10px;
 }
+
+.header-select {
+    width: 180px;
+    border-color: red;
+    color: red;
+    background-color: transparent;
+}
